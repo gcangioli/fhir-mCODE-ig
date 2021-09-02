@@ -111,6 +111,7 @@
 <artifact deprecated="true" key="Procedure" name="Procedure"/>
 <artifact id="StructureDefinition/mcode-procedure-intent" key="StructureDefinition-mcode-procedure-intent" name="Procedure Intent"/>
 <artifact id="ValueSet/mcode-procedure-intent-vs" key="ValueSet-mcode-procedure-intent-vs" name="Procedure Intent Value Set"/>
+<artifact id="ValueSet/biomarker-protein-marker-test-vs" key="ValueSet-biomarker-protein-marker-test-vs" name="Protein tumor markers"/>
 <artifact deprecated="true" id="ValueSet/mcode-radiation-procedure-value-set" key="radiation-procedure-value-set" name="Radiation Procedure Value Set"/>
 <artifact deprecated="true" id="ValueSet/mcode-radiation-target-body-site-value-set" key="radiation-target-body-site-value-set" name="Radiation Target Body Site Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/mcode-radiotherapy-anatomic-volume" key="StructureDefinition-mcode-radiotherapy-anatomic-volume" name="Radiotherapy Anatomic Volume"/>
@@ -171,6 +172,10 @@
 <artifact id="ValueSet/mcode-tumor-size-units-vs" key="ValueSet-mcode-tumor-size-units-vs" name="Units of tumor size value set"/>
 <artifact deprecated="true" key="ValueSet" name="ValueSet"/>
 <artifact id="Observation/binet-stage-group-A" key="Observation-binet-stage-group-A" name="binet-stage-group-A"/>
+<artifact id="Observation/biomarker-estrogen-receptor" key="Observation-biomarker-estrogen-receptor" name="biomarker-estrogen-receptor"/>
+<artifact id="Observation/biomarker-her2-ihc" key="Observation-biomarker-her2-ihc" name="biomarker-her2-ihc"/>
+<artifact id="Observation/biomarker-mdm2-amplification" key="Observation-biomarker-mdm2-amplification" name="biomarker-mdm2-amplification"/>
+<artifact id="Observation/biomarker-pdl1-by-clone-22c3" key="Observation-biomarker-pdl1-by-clone-22c3" name="biomarker-pdl1-by-clone-22c3"/>
 <artifact id="Observation/bodyheight-jenny-m-2018-03-06" key="Observation-bodyheight-jenny-m-2018-03-06" name="bodyheight-jenny-m-2018-03-06"/>
 <artifact id="Observation/bodyweight-jenny-m-2018-03-16" key="Observation-bodyweight-jenny-m-2018-03-16" name="bodyweight-jenny-m-2018-03-16"/>
 <artifact id="Observation/bodyweight-jenny-m-2018-04-22" key="Observation-bodyweight-jenny-m-2018-04-22" name="bodyweight-jenny-m-2018-04-22"/>
@@ -257,6 +262,7 @@
 <artifact id="CapabilityStatement/mcode-sender-patients-in-group" key="CapabilityStatement-mcode-sender-patients-in-group" name="mcode-sender-patients-in-group"/>
 <artifact id="CapabilityStatement/mcode-sender-patients-with-cancer-condition" key="CapabilityStatement-mcode-sender-patients-with-cancer-condition" name="mcode-sender-patients-with-cancer-condition"/>
 <artifact id="Observation/observation-smoking-history-jenny-m" key="Observation-observation-smoking-history-jenny-m" name="observation-smoking-history-jenny-m"/>
+<artifact id="Patient/patient-jane-doe-biomarker" key="Patient-patient-jane-doe-biomarker" name="patient-jane-doe-biomarker"/>
 <artifact id="Condition/primary-cancer-condition-breast" key="Condition-primary-cancer-condition-breast" name="primary-cancer-condition-breast"/>
 <artifact id="Condition/primary-cancer-condition-cll" key="Condition-primary-cancer-condition-cll" name="primary-cancer-condition-cll"/>
 <artifact id="Condition/primary-cancer-condition-jenny-m" key="Condition-primary-cancer-condition-jenny-m" name="primary-cancer-condition-jenny-m"/>
@@ -320,6 +326,7 @@
 <page key="examples" name="Extended Example"/>
 <page deprecated="true" key="extensions" name="Extensions"/>
 <page key="group-genomics" name="Genomics"/>
+<page key="glossary" name="Glossary"/>
 <page deprecated="true" key="history" name="History"/>
 <page key="index" name="Home"/>
 <page key="conformance-patients" name="Identifying In-Scope Patients"/>

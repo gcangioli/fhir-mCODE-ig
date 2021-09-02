@@ -30,3 +30,4 @@ Thumbs.db
 # Microsoft Office temp files #
 ###############################
 ~$*.xlsx
+*.cache

@@ -17,6 +17,8 @@ There are however tumor marker tests that are molecular marker equivalent tests 
 
 ### mCODE Use of Genomics Elements
 
+#### Use Case #1: Detailed Genomics Reporting
+
 mCODE includes genomics-related data elements needed inform cancer assessment and treatment options. The profiles are based on the [HL7 CGWG Clinical Genomics Reporting Implementation Guide](http://hl7.org/fhir/uv/genomics-reporting/index.html). Four profiles relate to the capture of clinical genomics data:
 
 * [CancerGenomicsReport] - contain results of genomic analyses. Genomic reports vary in complexity and content, as simple as the results for a single discrete variant to complex sequences.
@@ -24,24 +26,33 @@ mCODE includes genomics-related data elements needed inform cancer assessment an
 * [GenomicRegionStudied] - used to record the portion(s) of the genome that was tested for variants.
 * [GeneticSpecimen] - describes a specimen collected for a genomics test.
 
+#### Use Case #2: Genomics Reporting Simplification - Biomarkers
+
+A second use case is intended to provide a lightweight, provider-centric representation of "-Omics" data. It is an abstraction of both TumorMarkerTest and the detailed mCODE genomics reporting elements intended which minimally drives treatment decisions. The rationale and supplemental guidance for the representation of biomarkers is further described [here](group-genomics-biomarker.html). 
+
 ### On Genomics Test Representation
 
 The identity of non-genomic laboratory tests is typically represented by a [Logical Observation Identifiers and Names (LOINC)](https://loinc.org/) code. However, many genetic tests and panels do not have LOINC codes, although some might have an identifier in the [NCBI Genetic Testing Registry (GTR)](https://www.ncbi.nlm.nih.gov/gtr/), a central location for voluntary submission of genetic test information by providers. While GTR is a viable source for identifying many genetic tests, the user should be aware that the GTR is not single authoritative source since the test data is voluntarily updated. Standardization of codes for genetic tests is essential to facilitate data analysis of genetic tests, and should be a priority for the genomics testing community in the near future. Implementers should also note that, to conform to the requirements of the [US Core Laboratory Result Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-observation-lab.html), if a suitable LOINC exists, it must be used. If there is no suitable code in LOINC, then a code from an alternative code system such as GTR can be used.
 
 
-### Profiles
+### mCODE Genomics FHIR Artifacts
+#### Profiles
 
 * [CancerGeneticVariant]
 * [GeneticSpecimen]
 * [CancerGenomicsReport]
 * [GenomicRegionStudied]
 
-### Value Sets
+#### Value Sets
 
+**Genomics Core Value Sets**
 * [ClinvarVS]
 * [DNAChangeTypeVS]
 * [GeneticSpecimenTypeVS]
 * [HGNCVS]
 * [HGVSVS]
+
+**Biomarker Use Case Value Sets**
+* [ProteinMarkerTestVS]
 
 {% include markdown-link-references.md %}
