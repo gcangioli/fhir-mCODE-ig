@@ -156,3 +156,4 @@
 <!-- Other links -->
 [in-scope patient]: conformance-patients.html
 [in-scope patients]: conformance-patients.html
+[biomarker]: biomarker.html

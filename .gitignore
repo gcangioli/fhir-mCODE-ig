@@ -31,3 +31,14 @@ Thumbs.db
 ###############################
 ~$*.xlsx
 *.cache
+input-cache/txcache/version.ctl
+input-cache/txcache/umls.cache
+input-cache/txcache/ucum.cache
+input-cache/txcache/snomed.cache
+input-cache/txcache/rxnorm.cache
+input-cache/txcache/loinc.cache
+input-cache/txcache/lang.cache
+input-cache/txcache/icd-10-cm.cache
+input-cache/txcache/http___varnomen.hgvs.org.cache
+input-cache/txcache/all-systems.cache
+*.cache

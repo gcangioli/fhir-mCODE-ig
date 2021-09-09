@@ -1,10 +1,6 @@
-{% raw %}
-<blockquote class="stu-note">
-<p>
+<div markdown="1" class="note">
 This page has been enhanced to include extended guidance on the use of mCODE genomics elements in support of real-world scenarios. 
-</p>
-</blockquote>
-{% endraw %}
+</div>
 
 ### Assumptions and Scope
 
@@ -28,7 +24,7 @@ mCODE includes genomics-related data elements needed inform cancer assessment an
 
 #### Use Case #2: Genomics Reporting Simplification - Biomarkers
 
-A second use case is intended to provide a lightweight, provider-centric representation of "-Omics" data. It is an abstraction of both TumorMarkerTest and the detailed mCODE genomics reporting elements intended which minimally drives treatment decisions. The rationale and supplemental guidance for the representation of biomarkers is further described [here](group-genomics-biomarker.html). 
+A second use case is intended to provide a lightweight, provider-centric representation of "-Omics" data. It is an abstraction of both TumorMarkerTest and the detailed mCODE genomics reporting elements intended which minimally drives treatment decisions. The rationale and supplemental guidance for the representation of biomarkers is further described [here](biomarker.html).
 
 ### On Genomics Test Representation
 

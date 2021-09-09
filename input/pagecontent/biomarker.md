@@ -1,10 +1,6 @@
-{% raw %}
-<blockquote class="stu-note">
-<p>
+<div markdown="1" class="note">
 This page has been enhanced to include extended guidance on the use of mCODE genomics elements in support of real-world scenarios. 
-</p>
-</blockquote>
-{% endraw %}
+</div>
 
 ## mCODE Rationale
 
