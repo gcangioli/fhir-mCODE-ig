@@ -318,6 +318,7 @@
 <page deprecated="true" key="profiles" name="(profiles)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="group-assessment" name="Assessment"/>
+<page key="biomarker" name="Biomarker"/>
 <page key="changelog" name="Change Log"/>
 <page key="conformance-general" name="Conformance Expectations"/>
 <page key="dictionary" name="Data Dictionary"/>

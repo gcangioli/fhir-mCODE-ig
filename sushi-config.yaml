@@ -37,6 +37,8 @@ pages:
     title: Treatments
   group-outcome.md:
     title: Outcomes
+  biomarker.md:
+    title: Biomarker
   conformance-general.md:
     title: Conformance Expectations
   conformance-patients.md:
