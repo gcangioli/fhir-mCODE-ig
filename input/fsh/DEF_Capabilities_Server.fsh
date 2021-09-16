@@ -160,7 +160,6 @@ Usage: #definition
 * description = "Retrieves a Bundle of Condition resources with a code in mCODE's cancer condition value set, and allows for associated Patient resources to be retrieved in a subsequent request. Use ONLY when reverse chaining AND `_include` are not available on the system."
 * name = "CapabilityStatementSenderConditionsThenPatients"
 * title = "mCODE Data Sender: Get Conditions then Patients"
-
 * insert mCODE_CapabilityStatement_Server_Common
 
 * insert mCODE_CapabilityStatement_Patient_Server_Common_Rules // Has to be here to make indexing work for the Condition RuleSet below
