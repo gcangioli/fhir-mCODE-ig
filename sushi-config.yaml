@@ -37,8 +37,10 @@ pages:
     title: Treatments
   group-outcome.md:
     title: Outcomes
-  biomarker.md:
-    title: Biomarker
+  genomics-biomarker.md:
+    title: Simplfied Genomics Exchange - Biomarkers Representation
+  genomics-detailed.md:
+    title: Detailed Genomics Exchange  
   conformance-general.md:
     title: Conformance Expectations
   conformance-patients.md:

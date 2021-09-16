@@ -111,7 +111,7 @@
 <artifact deprecated="true" key="Procedure" name="Procedure"/>
 <artifact id="StructureDefinition/mcode-procedure-intent" key="StructureDefinition-mcode-procedure-intent" name="Procedure Intent"/>
 <artifact id="ValueSet/mcode-procedure-intent-vs" key="ValueSet-mcode-procedure-intent-vs" name="Procedure Intent Value Set"/>
-<artifact id="ValueSet/biomarker-protein-marker-test-vs" key="ValueSet-biomarker-protein-marker-test-vs" name="Protein tumor markers"/>
+<artifact id="ValueSet/mcode-biomarker-protein-tumor-vs" key="ValueSet-mcode-biomarker-protein-tumor-vs" name="Protein tumor markers"/>
 <artifact deprecated="true" id="ValueSet/mcode-radiation-procedure-value-set" key="radiation-procedure-value-set" name="Radiation Procedure Value Set"/>
 <artifact deprecated="true" id="ValueSet/mcode-radiation-target-body-site-value-set" key="radiation-target-body-site-value-set" name="Radiation Target Body Site Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/mcode-radiotherapy-anatomic-volume" key="StructureDefinition-mcode-radiotherapy-anatomic-volume" name="Radiotherapy Anatomic Volume"/>
@@ -318,10 +318,10 @@
 <page deprecated="true" key="profiles" name="(profiles)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="group-assessment" name="Assessment"/>
-<page key="biomarker" name="Biomarker"/>
 <page key="changelog" name="Change Log"/>
 <page key="conformance-general" name="Conformance Expectations"/>
 <page key="dictionary" name="Data Dictionary"/>
+<page key="genomics-detailed" name="Detailed Genomics Exchange"/>
 <page key="group-disease" name="Disease Characterization"/>
 <page key="downloads" name="Download Specification"/>
 <page key="examples" name="Extended Example"/>
@@ -335,6 +335,7 @@
 <page key="group-outcome" name="Outcomes"/>
 <page key="group-patient" name="Patient Information"/>
 <page key="conformance-profiles" name="Profile Conformance"/>
+<page key="genomics-biomarker" name="Simplfied Genomics Exchange - Biomarkers Representation"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>
 <page key="group-treatment" name="Treatments"/>

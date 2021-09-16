@@ -112,6 +112,7 @@
 [ObservationCodesDistantMetastasesVS]: ValueSet-mcode-observation-codes-distant-metastases-vs.html
 [PresentAbsentUnknownVS]: ValueSet-mcode-present-absent-unknown.html
 [PrimaryOrUncertainBehaviorCancerDisorderVS]: ValueSet-mcode-primary-or-uncertain-behavior-cancer-disorder-vs.html
+[ProteinMarkerTestVS]: ValueSet-mcode-biomarker-protein-tumor-vs
 [RadiotherapyModalityVS]: ValueSet-mcode-radiotherapy-modality-vs.html
 [RadiotherapyTechniqueVS]: ValueSet-mcode-radiotherapy-technique-vs.html
 [RadiotherapyTreatmentLocationVS]: ValueSet-mcode-radiotherapy-treatment-location-vs.html
@@ -156,4 +157,4 @@
 <!-- Other links -->
 [in-scope patient]: conformance-patients.html
 [in-scope patients]: conformance-patients.html
-[biomarker]: biomarker.html
+[biomarker]: genomics-biomarker.html

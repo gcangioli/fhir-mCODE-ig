@@ -1,5 +1,5 @@
 ValueSet: ProteinMarkerTestVS
-Id: biomarker-protein-marker-test-vs
+Id: mcode-biomarker-protein-tumor-vs
 Title: "Protein tumor markers"
 Description: "A set of cancer-relevant prognostic protein tumor markers; not from a genomics sequencing test. The specimen could be either tissue or serum."
 * LNC#85337-4 "Estrogen receptor Ag [Presence] in Breast cancer specimen by Immune stain"

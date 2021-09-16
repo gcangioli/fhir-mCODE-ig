@@ -1,36 +1,27 @@
-<div markdown="1" class="note">
-This page has been enhanced to include extended guidance on the use of mCODE genomics elements in support of real-world scenarios. 
-</div>
+This use case focuses on the translation of genomic data elements as represented within a genomic sequencing report. 
 
-### mCODE Use Cases for Genomics Data Sharing
-
-mCODE includes genomics-related data elements needed inform cancer assessment and treatment options. Genomic data exchange needs however can vary widely in its depth and breadth, as what stakeholders determine as "actionally minimal". This wide variation merited supplemental guidance based on a defined use case. 
-
-Two primary use cases are identified below.
-<br />
-
-#### Use Case #1: Detailed Genomics Reporting
-
-<br />
-The initial use case was primarily driven on the translation of genomic reporting elements with as much alignment to the [HL7 CGWG Clinical Genomics Reporting Implementation Guide](http://hl7.org/fhir/uv/genomics-reporting/index.html).
-
-The profiles are based on the [HL7 CGWG Clinical Genomics Reporting Implementation Guide](http://hl7.org/fhir/uv/genomics-reporting/index.html). Four profiles relate to the capture of clinical genomics data:
+Four mCODE profiles relate to the capture of clinical genomics data to support this use case:
 
 * [CancerGenomicsReport] - contain results of genomic analyses. Genomic reports vary in complexity and content, as simple as the results for a single discrete variant to complex sequences.
 * [CancerGeneticVariant] - used to record variants that could be found from tests that broadly analyze genetic regions (e.g.: exome tests) and stores results for any variants that could have been found. The region in which the variant was found could be specified in the RegionStudied attribute of the GenomicsReport profile.
 * [GenomicRegionStudied] - used to record the portion(s) of the genome that was tested for variants.
 * [GeneticSpecimen] - describes a specimen collected for a genomics test.
 
-#### Use Case #2: Simplfied Genomics Exchange - Biomarkers Representation
+These profiles are based on the [HL7 CGWG Clinical Genomics Reporting Implementation Guide](http://hl7.org/fhir/uv/genomics-reporting/index.html). They do not however directly derive from the HL7 clinical genomics profiles. This is intentional given the current and significant changes to the HL7 Genomics Reporting IG Standard for Trial Use (STU) ballot. These changes being applied to the CG Reporting IG continuous integration (CI) build. Because it is generally not recommended for a dependent FHIR IG to directly derive from a continuous build artifact. To balance the need for aligning compatibility while balancing version changes among the two IGs, mCODE instead keeps track of the HL7 Genomics Reporting IG CI build changes and incorporates them into compatible profiles.
 
-<br />
-A second use case is intended to provide a lightweight, provider-centric representation of "-Omics" data. This representation provides more of a "materialized view" extracting a small set of both TumorMarkerTest and the detailed mCODE genomics reporting elements into an abstract set of tables. It is intended which minimally drives treatment decisions. The abstracted biomarker resource should have a reference to the originating detailed resource for provenance.
+The table below lists the profile equivalencies between the two IGs:
 
-The rationale and supplemental guidance for the representation of biomarkers is further described [here](genomics-biomarker.html).
+| mCODE Profile      | HL7 CG Reporting IG Profile | Comments                  |
+|--------------------|-----------------------------|---------------------------|
+| CancerGenomicsReport | genomics-report | |
+| CancerGeneticVariant | variant | |
+| GenomicRegionStudied | region-studied | |
+| GeneticSpecimen | specimen | |
+
+{: .grid }
+
 
 ## General Implementation Guidance
-
-<br />
 
 ### Assumptions and Scope
 
@@ -44,8 +35,14 @@ There are however tumor marker tests that are molecular marker equivalent tests 
 
 The identity of non-genomic laboratory tests is typically represented by a [Logical Observation Identifiers and Names (LOINC)](https://loinc.org/) code. However, many genetic tests and panels do not have LOINC codes, although some might have an identifier in the [NCBI Genetic Testing Registry (GTR)](https://www.ncbi.nlm.nih.gov/gtr/), a central location for voluntary submission of genetic test information by providers. While GTR is a viable source for identifying many genetic tests, the user should be aware that the GTR is not single authoritative source since the test data is voluntarily updated. Standardization of codes for genetic tests is essential to facilitate data analysis of genetic tests, and should be a priority for the genomics testing community in the near future. Implementers should also note that, to conform to the requirements of the [US Core Laboratory Result Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-observation-lab.html), if a suitable LOINC exists, it must be used. If there is no suitable code in LOINC, then a code from an alternative code system such as GTR can be used.
 
+### Representing Gene Fusion Events
+
+
 
 ### mCODE Genomics FHIR Artifacts
+
+<br />
+
 #### Profiles
 
 * [CancerGeneticVariant]
@@ -55,7 +52,7 @@ The identity of non-genomic laboratory tests is typically represented by a [Logi
 
 #### Value Sets
 
-**Genomics Core Value Sets**
+**mCODE Genomics Core Value Sets**
 * [ClinvarVS]
 * [DNAChangeTypeVS]
 * [GeneticSpecimenTypeVS]
