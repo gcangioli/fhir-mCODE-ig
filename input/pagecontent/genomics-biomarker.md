@@ -179,9 +179,11 @@ The mCODE mapping is as follows:
 
 | Biomarker Observation element| mCODE Profile Name   | mCODE Element / Path      | Comments           |
 |------------------------------|----------------------|---------------------------|--------------------|
-| biomarker-name | CancerGeneticVariant | Observation.component:geneStudied.code  | Use a dash delimiter to denote the fusion gene. For example, BCR-ABL1 |
-| biomarker-value | CancerGeneticVariant | Observation.component:geneStudied.valueCodeableConcept | TBD |
-| biomarker-value | CancerGeneticVariant | Observation.component:clinicalSignificance.valueCodeableConcept | TBD |
+| biomarker source | GeneticSpecimen | Observation.method | |
+| biomarker category | CancerGeneticVariant | Observation.method | |
+| biomarker name | CancerGeneticVariant | Observation.component:geneStudied.coding.text  | Use a dash delimiter to denote the fusion gene. For example, BCR-ABL1 |
+| biomarker result | CancerGeneticVariant | Observation.component:geneStudied.valueCodeableConcept | TBD |
+| biomarker interpretation | CancerGeneticVariant | Observation.component:clinicalSignificance.valueCodeableConcept | TBD |
 {: .grid }
 
 <br />

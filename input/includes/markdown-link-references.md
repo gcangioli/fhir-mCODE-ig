@@ -7,6 +7,7 @@
 
 <!-- mCODE Profiles and Extensions -->
 [BrachytherapyTreatmentPhase]: StructureDefinition-mcode-brachytherapy-treatment-phase.html
+[BiomarkerTest]: StructureDefinition-mcode-biomarker-test.html
 [CancerDiseaseStatus]: StructureDefinition-mcode-cancer-disease-status.html
 [CancerGeneticVariant]: StructureDefinition-mcode-cancer-genetic-variant.html
 [CancerGenomicsReport]: StructureDefinition-mcode-cancer-genomics-report.html
