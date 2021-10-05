@@ -45,6 +45,11 @@ There are however tumor marker tests that are molecular marker equivalent tests 
 The identity of non-genomic laboratory tests is typically represented by a [Logical Observation Identifiers and Names (LOINC)](https://loinc.org/) code. However, many genetic tests and panels do not have LOINC codes, although some might have an identifier in the [NCBI Genetic Testing Registry (GTR)](https://www.ncbi.nlm.nih.gov/gtr/), a central location for voluntary submission of genetic test information by providers. While GTR is a viable source for identifying many genetic tests, the user should be aware that the GTR is not single authoritative source since the test data is voluntarily updated. Standardization of codes for genetic tests is essential to facilitate data analysis of genetic tests, and should be a priority for the genomics testing community in the near future. Implementers should also note that, to conform to the requirements of the [US Core Laboratory Result Profile](http://hl7.org/fhir/us/core/StructureDefinition-us-core-observation-lab.html), if a suitable LOINC exists, it must be used. If there is no suitable code in LOINC, then a code from an alternative code system such as GTR can be used.
 
 
+### Representing Fusion Events
+
+A fusion gene is defined as two genes that are joined so that they are transcribed and translated as a single unit. In the context of cancer, they can occur as a result of chromosome rearrangements. For example, the BCL–ABL oncogene, which causes chronic myelogenous leukemia, results from a chromosomal transposition that fuses the BCL and ABL genes (source: [Brenner's Encyclopedia of Genetics](https://www.sciencedirect.com/referencework/9780080961569/brenners-encyclopedia-of-genetics)). 
+
+
 ### mCODE Genomics FHIR Artifacts
 #### Profiles
 
