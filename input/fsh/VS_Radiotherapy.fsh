@@ -193,7 +193,7 @@ Description: "Codes describing the types of body volumes used in radiotherapy pl
 ValueSet: RadiotherapyTreatmentLocationQualifierVS
 Id: mcode-radiotherapy-treatment-location-qualifier-vs
 Title: "Radiotherapy Treatment Location Qualifier Value Set"
-Description: "Various modifiers that can be applied to body locations where radiotherapy treatments can be directed."
+Description: "Various modifiers that can be applied to body locations where radiotherapy treatments can be directed. Laterality modifiers are not included."
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * include codes from system SCT where concept is-a #258399006  "Lymph node level value (qualifier value)"  // I, II, III, IV, V, VI, VII and sub-levels
 * include codes from system TG263Qualifier
