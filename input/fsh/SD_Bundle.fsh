@@ -11,7 +11,6 @@ Description: "A collection of data for an mCODE cancer patient."
 * insert BundleEntry(cancerPatient, 1, 1, Cancer Patient, The Cancer Patient whose data is included in the bundle., CancerPatient)
 * insert BundleEntry(primaryCancerCondition, 0, *, Primary Cancer Condition, Condition resource representing the Primary Cancer Condition., PrimaryCancerCondition)
 * insert BundleEntry(secondaryCancerCondition, 0, *, Secondary Cancer Condition, Condition resource representing the Secondary Cancer Condition., SecondaryCancerCondition)
-/*
 * insert BundleEntry(cancerDiseaseStatus, 0, *, Cancer Disease Status, Observations resource representing Cancer Disease Status. Include past assessments if available., CancerDiseaseStatus)
 * insert BundleEntry(CancerGenomicVariant, 0, *, Cancer Genomic Variant, Observation resource representing genomic variants., CancerGenomicVariant)
 * insert BundleEntry(cancerGenomicsReport, 0, *, Cancer Genomics Report, DiagnosticReport resource representing cancer genomics reports., CancerGenomicsReport)
@@ -33,6 +32,6 @@ Description: "A collection of data for an mCODE cancer patient."
 * insert BundleEntry(tumorMarkerTest, 0, *, Tumor Marker Tests, Observations resource representing tumor marker tests., TumorMarkerTest)
 * insert BundleEntry(tumorSize, 0, *, Tumor Size Measurements, Observation resource representing a tumor size measurement., TumorSize)
 * insert BundleEntry(vitalSign, 0, *, Patient Vital Signs, Observation resource representing patient height\, weight\, blood pressure\, and other vital signs., http://hl7.org/fhir/StructureDefinition/vitalsigns)
-*/
+
 // Put the MS for entry.resource LAST, otherwise it doesn't take for some reason
 * timestamp and entry and entry.resource MS

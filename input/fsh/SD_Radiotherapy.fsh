@@ -308,8 +308,8 @@ Description: "A volume of the body used in radiotherapy planning or treatment de
 * locationQualifier ^short = "Qualifiers on location, exclusive of laterality."
 * locationQualifier ^definition = "Qualifiers that together with the associated location code specify the TG263 body structure comprising the irradiated volume. Laterality qualifiers are specified separately via an extension."
 * extension contains LateralityQualifier named lateralityQualifier 0..1
-* extension.lateralityQualifier ^short = "Laterality qualifier."
-* extension.lateralityQualifier ^definition = "Laterality qualifier that along with associated location and location qualifier codes specify the TG263 body structure comprising the irradiated volume."
+* extension[lateralityQualifier] ^short = "Laterality qualifier."
+* extension[lateralityQualifier] ^definition = "Laterality qualifier that along with associated location and location qualifier codes specify the TG263 body structure comprising the irradiated volume."
 * identifier and location and description and patient and morphology and locationQualifier and extension[lateralityQualifier]  MS
 * patient only Reference(CancerPatient)
 
