@@ -14,18 +14,16 @@ Description:    "The result of a tumor marker test. Tumor marker tests are gener
 // Already MS in US Core Obs Lab: status, category, code, subject, effective[x], value[x], dataAbsentReason
 * specimen MS
 
-/* 
-Mapping:  USCorePatientToArgonaut
-Source:   USCorePatient
-Target:   "http://unknown.org/Argonaut-DQ-DSTU2"
-Title:    "Argonaut DSTU2"
-Id:       argonaut-dq-dstu2
-* -> "Patient"
-* extension[USCoreRaceExtension] -> "Patient.extension[http://fhir.org/guides/argonaut/StructureDefinition/argo-race]"
-* extension[USCoreEthnicityExtension] -> "Patient.extension[http://fhir.org/guides/argonaut/StructureDefinition/argo-ethnicity]"
-* extension[USCoreBirthSexExtension] -> "Patient.extension[http://fhir.org/guides/argonaut/StructureDefinition/argo-birthsex]"
-* identifier -> "Patient.identifier"
-* identifier.system -> "Patient.identifier.system"
-* identifier.value -> "Patient.identifier.value"
-
-*/
+Profile:        BiomarkerTestProtein
+Parent:         USCoreObservationLab
+Id:             mcode-biomarker-test-protein
+Title:          "Biomarker Test - Protein Markers"
+Description:    "The result of a tumor marker test specific for gene expression or surface protein markers. Examples include estrogen receptor"
+* subject 1..1
+* code from ProteinMarkerTestVS (required)
+// * code obeys tumor-marker-test-code-invariant
+* subject only Reference(CancerPatient)
+* effective[x] only dateTime or Period
+* value[x] only Quantity or Ratio or string or CodeableConcept
+// Already MS in US Core Obs Lab: status, category, code, subject, effective[x], value[x], dataAbsentReason
+* specimen MS

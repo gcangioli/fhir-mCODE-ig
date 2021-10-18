@@ -83,7 +83,7 @@ Unstructured test reports:
 * All simplified biomarker constructs mapped from a detailed mCODE genomics resource **SHALL** have a reference to that originating resource.
 ##### Biomarker pattern #1: Protein Tumor Marker with Quantitative Value
 
-Map from the mCODE CancerGeneticVariant profile if the biomarker of type [ProteinMarkerTestVS] was part of a mutational analysis from a genomic sequencing test.
+Map from the mCODE CancerGenomicVariant profile if the biomarker of type [ProteinMarkerTestVS] was part of a mutational analysis from a genomic sequencing test.
 
 
 The pattern of translation is as follows:
@@ -91,11 +91,12 @@ The pattern of translation is as follows:
 
 | Biomarker Observation element| mCODE Profile Name   | mCODE Element / Path      | Comments           |
 |------------------------------|----------------------|---------------------------|--------------------|
-| biomarker-source | TumorMarkerTest    | Observation.specimen | |
-| biomarker-category | TumorMarkerTest | Observation.category.code | |
-| biomarker-name | TumorMarkerTest | Observation.code.coding.displayName  |  |
-| biomarker-value | TumorMarkerTest | Observation.valueCodeableConcept | |
-| biomarker-interpretation | TumorMarkerTest | Observation.interpretation | |
+
+| biomarker-source | ProteinMarkerTest    | Specimen.type.coding.displayName | |
+| biomarker-category | ProteinMarkerTest | Observation.category.code | |
+| biomarker-name | ProteinMarkerTest | Observation.code.coding.displayName  |  |
+| biomarker-value | ProteinMarkerTest | Observation.valueCodeableConcept | |
+| biomarker-interpretation | ProteinMarkerTest | Observation.interpretation | |
 {: .grid }
 
 | Biomarker Element         | Example value              |
@@ -129,16 +130,17 @@ If the biomarker is a protein tumor marker with a result that denotes confirmati
 
 If the biomarker is from a genomics sequencing report, and whose results are represented with detailed variant data represented conformant with bioinformatics standards like HGNC and HGVS.
 
-Map from the mCODE CancerGeneticVariant profile if the biomarker of type [DNATumorMarkerTestVS] was part of a mutational analysis from a genomic sequencing test.
+Map from the mCODE CancerGenomicVariant profile if the biomarker of type [DNATumorMarkerTestVS] was part of a mutational analysis from a genomic sequencing test.
 
 The structural data mapping is as follows:
 
 
 | Biomarker Observation element| mCODE Profile Name   | mCODE Element / Path      | Comments           |
 |------------------------------|----------------------|---------------------------|--------------------|
-| biomarker-name | CancerGeneticVariant | Observation.component:geneStudied.valueCodeableConcept.display | uses the HGNC symbol rather than the code |
+| biomarker-source | TumorMarkerTest    | Specimen.type.coding.displayName | |
+| biomarker-name | CancerGenomicVariant | Observation.component:geneStudied.valueCodeableConcept.display | uses the HGNC symbol rather than the code |
 | biomarker-value | TumorMarkerTest | Observation.valueCodeableConcept | |
-| biomarker-interpretation | CancerGeneticVariant | Observation.component:clinicalSignificance |  |
+| biomarker-interpretation | CancerGenomicVariant | Observation.component:clinicalSignificance |  |
 
 {: .grid }
 
@@ -179,11 +181,11 @@ The mCODE mapping is as follows:
 
 | Biomarker Observation element| mCODE Profile Name   | mCODE Element / Path      | Comments           |
 |------------------------------|----------------------|---------------------------|--------------------|
-| biomarker source | GeneticSpecimen | Observation.method | |
-| biomarker category | CancerGeneticVariant | Observation.method | |
-| biomarker name | CancerGeneticVariant | Observation.component:geneStudied.coding.text  | Use a dash delimiter to denote the fusion gene. For example, BCR-ABL1 |
-| biomarker result | CancerGeneticVariant | Observation.component:geneStudied.valueCodeableConcept | TBD |
-| biomarker interpretation | CancerGeneticVariant | Observation.component:clinicalSignificance.valueCodeableConcept | TBD |
+| biomarker source | GenomicSpecimen | Specimen.code | |
+| biomarker category | CancerGenomicVariant | Observation.method | |
+| biomarker name | CancerGenomicVariant | Observation.component:geneStudied.coding.text  | Use a dash delimiter to denote the fusion gene. For example, BCR-ABL1 |
+| biomarker result | CancerGenomicVariant | Observation.component:geneStudied.valueCodeableConcept | TBD |
+| biomarker interpretation | CancerGenomicVariant | Observation.component:clinicalSignificance.valueCodeableConcept | TBD |
 {: .grid }
 
 <br />

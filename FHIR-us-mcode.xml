@@ -21,6 +21,8 @@
 <artifact id="ValueSet/mcode-photon-beam-technique-vs" key="ValueSet-mcode-photon-beam-technique-vs" name="Allowed techniques for photon beam modality"/>
 <artifact id="ValueSet/mcode-proton-beam-technique-vs" key="ValueSet-mcode-proton-beam-technique-vs" name="Allowed techniques for proton beam modality"/>
 <artifact id="ValueSet/mcode-benign-uncertain-neoplasm-brain-cns-disorder-vs" key="ValueSet-mcode-benign-uncertain-neoplasm-brain-cns-disorder-vs" name="Benign Neoplasm"/>
+<artifact id="StructureDefinition/mcode-biomarker-test" key="StructureDefinition-mcode-biomarker-test" name="Biomarker Test"/>
+<artifact id="StructureDefinition/mcode-biomarker-test-protein" key="StructureDefinition-mcode-biomarker-test-protein" name="Biomarker Test - Protein Markers"/>
 <artifact id="StructureDefinition/mcode-body-location-qualifier" key="StructureDefinition-mcode-body-location-qualifier" name="Body Location Qualifier"/>
 <artifact id="ValueSet/mcode-body-location-qualifier-vs" key="ValueSet-mcode-body-location-qualifier-vs" name="Body Location Qualifier Value Set"/>
 <artifact id="StructureDefinition/mcode-body-structure-identifier" key="StructureDefinition-mcode-body-structure-identifier" name="Body Structure Identifier"/>

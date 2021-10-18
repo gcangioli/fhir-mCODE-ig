@@ -56,7 +56,7 @@ mCODE represents a fusion gene as an instance of **CancerGenomicVariant** with t
 * The _**molecular-consequence**_ component is fixed to the SequenceOntology code _SO:001565_ (gene_fusion)
 * Two _**gene-studied**_ components are included, one for each gene involved in the fusion event.
 
-The diagram below shows an example representation for the gene fusion BCR_ABL1:
+The diagram below shows an example representation for the gene fusion BCR-ABL1:
 
 
 <div style="text-align: center;">
