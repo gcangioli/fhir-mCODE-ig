@@ -89,15 +89,15 @@ Map from the mCODE CancerGenomicVariant profile if the biomarker of type [Protei
 The pattern of translation is as follows:
 
 
-| Biomarker Observation element| mCODE Profile Name   | mCODE Element / Path      | Comments           |
+| Biomarker Observation element| mCODE Profile Name   | mCODE Element Path      | Comments             |
 |------------------------------|----------------------|---------------------------|--------------------|
-
 | biomarker-source | ProteinMarkerTest    | Specimen.type.coding.displayName | |
 | biomarker-category | ProteinMarkerTest | Observation.category.code | |
 | biomarker-name | ProteinMarkerTest | Observation.code.coding.displayName  |  |
 | biomarker-value | ProteinMarkerTest | Observation.valueCodeableConcept | |
 | biomarker-interpretation | ProteinMarkerTest | Observation.interpretation | |
 {: .grid }
+
 
 | Biomarker Element         | Example value              |
 |---------------------------|----------------------------|
@@ -135,7 +135,7 @@ Map from the mCODE CancerGenomicVariant profile if the biomarker of type [DNATum
 The structural data mapping is as follows:
 
 
-| Biomarker Observation element| mCODE Profile Name   | mCODE Element / Path      | Comments           |
+| Biomarker Observation element| mCODE Profile Name   | mCODE Element Path      | Comments           |
 |------------------------------|----------------------|---------------------------|--------------------|
 | biomarker-source | TumorMarkerTest    | Specimen.type.coding.displayName | |
 | biomarker-name | CancerGenomicVariant | Observation.component:geneStudied.valueCodeableConcept.display | uses the HGNC symbol rather than the code |
