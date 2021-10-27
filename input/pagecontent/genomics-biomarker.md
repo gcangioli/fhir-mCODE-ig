@@ -135,13 +135,12 @@ Map from the mCODE CancerGenomicVariant profile if the biomarker of type [DNATum
 The structural data mapping is as follows:
 
 
-| Biomarker Observation element| mCODE Profile Name   | mCODE Element Path      | Comments           |
+| Biomarker Observation element| mCODE Profile Name   | mCODE Element Path        | Comments           |
 |------------------------------|----------------------|---------------------------|--------------------|
 | biomarker-source | TumorMarkerTest    | Specimen.type.coding.displayName | |
 | biomarker-name | CancerGenomicVariant | Observation.component:geneStudied.valueCodeableConcept.display | uses the HGNC symbol rather than the code |
 | biomarker-value | TumorMarkerTest | Observation.valueCodeableConcept | |
 | biomarker-interpretation | CancerGenomicVariant | Observation.component:clinicalSignificance |  |
-
 {: .grid }
 
 
